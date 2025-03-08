@@ -13,7 +13,7 @@ spec:
         app: dev-app
     spec:
       containers:
-      - name: 'hello-cluster'
-        image: 's-east1-docker.pkg.dev/qwiklabs-gcp-02-0863e5db482b/my-repository/hello-cloudbuild-dev:v1.0'
+      - name: 'hello-cloudbuild-dev'
+        image: 'us-east1-docker.pkg.dev/$PROJECT_ID/my-repository/hello-cloudbuild-dev:v1.0'
         ports:
         - containerPort: 8080
